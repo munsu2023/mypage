@@ -86,12 +86,13 @@
             margin-right: 10px;
         }
     </style>
+ 
     <script>
         $(document).ready(function() {
             fetch("http://spartacodingclub.shop/sparta_api/weather/seoul").then(res => res.json()).then(data => {
                     console.log(data)
-                    let number = data['temp']
-                    $('#temp').text(number)
+                    //let number = data['temp']
+                    //$('#temp').text(number)
                 })
         })
     </script>
